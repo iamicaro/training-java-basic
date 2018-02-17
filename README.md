@@ -60,6 +60,7 @@ public static void header() {
 Para determinar que um método vai ser executado depois de cada caso de teste utilizamos a anotação: <b>@After</b>
 
 Essa funcionalidade serve por exemplo para que antes de um método possamos finalizar variaveis.
+
 ```java
 @After
 public static void rodape() {
