@@ -159,7 +159,7 @@ Testa se um valor de um objeto NÃO está NULO.
 public void calcular() {
  double a = 4.0, b = 3.0;
  final double resultado = operacoes.somar(a, b);
- Assert.asserNotNull(resultado);
+ Assert.assertNotNull(resultado);
 }
 ```
 
@@ -172,7 +172,7 @@ Testa se um valor de um objeto está NULO.
 public void calcular() {
  double a = null, b = null;
  final double resultado = operacoes.somar(a, b);
- Assert.asserNotNull(resultado);
+ Assert.assertNotNull(resultado);
 }
 ```
 
