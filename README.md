@@ -1,6 +1,6 @@
 # Treinamento de Junit Básico
 
-Site JUnit:  http://junit.org/ 
+Site JUnit:  http://junit.org/
 Git:  https://github.com/junit-team/junit 
 
 Junit é um framework open-source simples para escrever testes automatizados com suporte na linguagem de programação Java. Com o Junit podemos criar testes para verificar funcionalidades de classes e seus métodos, recomendado para testes unitários. Podemos automatizar também a execução de todos os testes de forma que quando for criada uma nova versão estável do sistema o framework execute todos os testes para garantir a integridade e estabilidade do sistema desenvolvido.
@@ -15,6 +15,7 @@ O Junit trabalha basicamente com anotações (Annotations). Essas anotações in
 
 Para determinar se um método é de teste utilizamos logo acima da método de teste a anotação: @Test
 
-<code> @Test
-public void testName() {
+<code>@Test
+public void calcular() {
+operacoes.somar(a, b);
 }</code>
