@@ -80,6 +80,7 @@ public void calcular() {
 Para verificar se o método está retornando uma exception, muito importante para testes unitários. Podemos verificar se está tratando exceções a anotação: <b>@Test(expected=NullPointerException.class)</b>
 
 Essa funcionalidade é muito importante por exemplo para sabermos se o sistema está realmente tratando exceções e/ou validando erros internos.
+
 ```java
 @Test(expected=NullPointerException.class)
 public void calcular() {
