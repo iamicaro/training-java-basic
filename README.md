@@ -76,7 +76,8 @@ Essa funcionalidade serve por exemplos para que possamos temporizar o retorno de
 @Test(timeout = 300)
 public void calcular() {
   operacoes.somar(a, b);
-}```
+}
+```
  
 Para verificar se o método está retornando uma exception, muito importante para testes unitários. Podemos verificar se está tratando exceções a anotação: <b>@Test(expected=NullPointerException.class)</b>
 
