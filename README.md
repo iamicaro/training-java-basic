@@ -65,7 +65,7 @@ Essa funcionalidade serve por exemplo para que antes de um método possamos fina
 public static void rodape() {
   System.out.println("\nEssa calculadora foi desenvolvida por especialistas.");
 }
-```java
+```
 
 Para determinar que um teste tem um tempo máximo para ser executado. Por exemplo caso desejamos que nosso teste não demore mais que 300 milisegundos podemos realizar a seguinte anotação: <b>@Test(timeout = 300)</b>
 
