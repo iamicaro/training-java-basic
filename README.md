@@ -103,6 +103,8 @@ Os asserts determinam se uma condição de teste foi atendida ou não. Para ver 
 
 ### AssertEquals
 
+Testa igualdade entre dois objetos (esperado x retornado).
+
 ```java
 @Test(expected=NullPointerException.class)
 public void calcular() {
@@ -111,6 +113,8 @@ public void calcular() {
  Assert.assertEquals(7.0, resultado, 0);
 }
 ```
+
+
   
 Site JUnit:  http://junit.org/<br>
 Git:  https://github.com/junit-team/junit 
