@@ -106,6 +106,7 @@ Os asserts determinam se uma condição de teste foi atendida ou não. Para ver 
 ```java
 @Test(expected=NullPointerException.class)
 public void calcular() {
+ double a = 4.0, b = 3.0;
  final double resultado = operacoes.somar(a, b);
  Assert.assertEquals(7.0, resultado, 0);
 }
