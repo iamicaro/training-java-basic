@@ -19,11 +19,12 @@ public void calcular() {
 
 Para ignorar um método de teste utilizamos a anotação: <b>@Ignore</b>
 
-<pre><code>@Ignore
+```java
+@Ignore
 @Test
 public void calcular() {
   operacoes.somar(a, b);
-}</pre></code>
+}```
   
 Para determinar que um método vai ser executado antes dos demais métodos da classe de teste utilizamos a anotação: <b>@BeforeClass</b>
 
