@@ -70,12 +70,12 @@ Essa funcionalidade serve para que possamos antes de uma classe de teste por exe
 		System.out.println("\nEssa calculadora foi desenvolvida por especialistas.");
   }</pre></code>
   
- Para determinar que um teste tem um tempo máximo para ser executado. Por exemplo caso desejamos que nosso teste não demore mais que 300 milisegundos podemos realizar a seguinte anotação: <b>@Test(timeout = 300)</a>
+ Para determinar que um teste tem um tempo máximo para ser executado. Por exemplo caso desejamos que nosso teste não demore mais que 300 milisegundos podemos realizar a seguinte anotação: <b>@Test(timeout = 300)</b>
  
  Essa funcionalidade serve por exemplos para que possamos temporizar o retorno de um consulta no banco de dados.
  
- <pre><code> 
-	@Test(timeout = 300)
+ 
+<pre><code>@Test(timeout = 300)
 	public void calcular() {
   operacoes.somar(a, b);
   }</pre></code>
@@ -83,9 +83,8 @@ Essa funcionalidade serve para que possamos antes de uma classe de teste por exe
 Para verificar se o método está retornando uma exception, muito importante para testes unitários. Podemos verificar se está tratando exceções a anotação: <b>@Test(expected=NullPointerException.class)</b>
 
 Essa funcionalidade é muito importante por exemplo para sabermos se o sistema está realmente tratando exceções e/ou validando erros internos.
-
-<pre><code> 
-	@Test(expected=NullPointerException.class)
+ 
+<pre><code>	@Test(expected=NullPointerException.class)
 	public void calcular() {
   operacoes.somar(a, b);
   }</pre></code>
