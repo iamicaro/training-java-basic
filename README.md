@@ -88,3 +88,4 @@ Os asserts determinam se uma condição de teste foi atendida ou não. Para ver 
 
 
 ### Vamos fazer na prática?
+<img src="https://touts-images-2.s3.amazonaws.com/art/12330/xlarge_bora-hora-do-show.jpg" alt="Bora! Hora do SHOW." />
