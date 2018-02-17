@@ -10,6 +10,7 @@
 
 ## Anotações
 
+### @Test
 Para determinar se um método é de teste utilizamos logo acima da método de teste a anotação: <b>@Test</b>
 
 <pre><code>@Test
@@ -17,6 +18,7 @@ public void calcular() {
   operacoes.somar(a, b);
 }</pre></code>
 
+### @Ignore
 Para ignorar um método de teste utilizamos a anotação: <b>@Ignore</b>
 
 ```java
@@ -26,7 +28,8 @@ public void calcular() {
   operacoes.somar(a, b);
 }
 ```
-  
+
+### @BeforeClass
 Para determinar que um método vai ser executado antes dos demais métodos da classe de teste utilizamos a anotação: <b>@BeforeClass</b>
 
 Essa funcionalidade serve para que possamos antes de uma classe de teste por exemplo iniciar a conexão com o banco de dados, inicializar variaveis entre outras possibilidades.
@@ -37,6 +40,7 @@ public static void header() {
 }
 ```
 
+### @AfterClass
 Para determinar que um método vai ser executado depois dos demais métodos da classe de teste utilizamos a anotação: <b>@AfterClass</b>
   
  Essa funcionalidade serve para que possamos depois de uma classe de teste por exemplo fechar a conexão com o banco de dados, ajudar o garbage collection a limpar os dados ociosos entre outras possibilidades.
@@ -46,7 +50,8 @@ public static void rodape() {
   System.out.println("\nEssa calculadora foi desenvolvida por especialistas.");
 }
 ```
-  
+
+### @Before
 Para determinar que um método vai ser executado antes de cada caso de teste utilizamos a anotação: <b>@Before</b>
   
 Essa funcionalidade serve por exemplo para que antes de um método possamos inicializar variaveis.
@@ -57,6 +62,7 @@ public static void header() {
 }
 ```
 
+### @After
 Para determinar que um método vai ser executado depois de cada caso de teste utilizamos a anotação: <b>@After</b>
 
 Essa funcionalidade serve por exemplo para que antes de um método possamos finalizar variaveis.
@@ -68,6 +74,7 @@ public static void rodape() {
 }
 ```
 
+### @Test(timeout = 0)
 Para determinar que um teste tem um tempo máximo para ser executado. Por exemplo caso desejamos que nosso teste não demore mais que 300 milisegundos podemos realizar a seguinte anotação: <b>@Test(timeout = 300)</b>
 
 Essa funcionalidade serve por exemplos para que possamos temporizar o retorno de um consulta no banco de dados.
@@ -78,7 +85,8 @@ public void calcular() {
   operacoes.somar(a, b);
 }
 ```
- 
+
+### @Test(expected=NullPointerException.class)
 Para verificar se o método está retornando uma exception, muito importante para testes unitários. Podemos verificar se está tratando exceções a anotação: <b>@Test(expected=NullPointerException.class)</b>
 
 Essa funcionalidade é muito importante por exemplo para sabermos se o sistema está realmente tratando exceções e/ou validando erros internos.
@@ -92,6 +100,16 @@ public void calcular() {
  
  ## Assertions
 Os asserts determinam se uma condição de teste foi atendida ou não. Para ver os tipos de asserts bem como suas utilizações acesse:  https://github.com/junit-team/junit/wiki/Assertions
+
+### AssertEquals
+
+```java
+@Test(expected=NullPointerException.class)
+public void calcular() {
+ final double resultado = operacoes.somar(a, b);
+ Assert.assertEquals(7.0, resultado, 0);
+}
+```
   
 Site JUnit:  http://junit.org/<br>
 Git:  https://github.com/junit-team/junit 
