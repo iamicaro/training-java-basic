@@ -82,10 +82,8 @@ public void calcular() {
  ## Assertions
 Os asserts determinam se uma condição de teste foi atendida ou não. Para ver os tipos de asserts bem como suas utilizações acesse:  https://github.com/junit-team/junit/wiki/Assertions
   
-
-
-## Vamos fazer na prática?
-<img src="https://touts-images-2.s3.amazonaws.com/art/12330/xlarge_bora-hora-do-show.jpg" height="400" width="250" alt="Bora! Hora do SHOW." />
-  
-  Site JUnit:  http://junit.org/<br>
+Site JUnit:  http://junit.org/<br>
 Git:  https://github.com/junit-team/junit 
+
+### Vamos fazer na prática?
+<img src="https://touts-images-2.s3.amazonaws.com/art/12330/xlarge_bora-hora-do-show.jpg" height="400" width="250" alt="Bora! Hora do SHOW." />
