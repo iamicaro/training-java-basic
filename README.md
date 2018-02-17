@@ -128,7 +128,6 @@ public void calcular() {
     hasValue = true;
  }
  Assert.assertTrue(hasValue);
-    }
 }
 ```
 
@@ -146,7 +145,6 @@ public void calcular() {
     hasValue = false;
  }
  Assert.asserFalse(hasValue);
-    }
 }
 ```
 
