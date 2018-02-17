@@ -70,6 +70,7 @@ public static void rodape() {
 Para determinar que um teste tem um tempo máximo para ser executado. Por exemplo caso desejamos que nosso teste não demore mais que 300 milisegundos podemos realizar a seguinte anotação: <b>@Test(timeout = 300)</b>
 
 Essa funcionalidade serve por exemplos para que possamos temporizar o retorno de um consulta no banco de dados.
+
 ```java
 @Test(timeout = 300)
 public void calcular() {
