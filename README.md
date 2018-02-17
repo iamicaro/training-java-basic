@@ -15,7 +15,7 @@ O Junit trabalha basicamente com anotações (Annotations). Essas anotações in
 
 Para determinar se um método é de teste utilizamos logo acima da método de teste a anotação: @Test
 
-<code>@Test
+<pre><code>@Test
   public void calcular() {
   operacoes.somar(a, b);
-  }</code>
+  }</pre></code>
