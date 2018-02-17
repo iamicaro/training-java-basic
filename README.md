@@ -106,7 +106,7 @@ Os asserts determinam se uma condição de teste foi atendida ou não. Para ver 
 Testa igualdade entre dois objetos (esperado x retornado).
 
 ```java
-@Test(expected=NullPointerException.class)
+@Test
 public void calcular() {
  double a = 4.0, b = 3.0;
  final double resultado = operacoes.somar(a, b);
@@ -114,8 +114,68 @@ public void calcular() {
 }
 ```
 
+### AssertTrue
 
-  
+Testa Retorno booleano VERDADEIRO.
+
+```java
+@Test
+public void calcular() {
+ double a = 4.0, b = 3.0;
+ boolean hasValue = false;
+ final double resultado = operacoes.somar(a, b);
+ if(resultado.isEmpty()) {
+    hasValue = true;
+ }
+ Assert.assertTrue(hasValue);
+    }
+}
+```
+
+### AssertTrue
+
+Testa Retorno booleano FALSO.
+
+```java
+@Test
+public void calcular() {
+ double a = 4.0, b = 3.0;
+ boolean hasValue = true;
+ final double resultado = operacoes.somar(a, b);
+ if(resultado.isEmpty()) {
+    hasValue = false;
+ }
+ Assert.asserFalse(hasValue);
+    }
+}
+```
+
+### AssertNotNull
+
+Testa se um valor de um objeto NÃO está NULO.
+
+```java
+@Test
+public void calcular() {
+ double a = 4.0, b = 3.0;
+ final double resultado = operacoes.somar(a, b);
+ Assert.asserNotNull(resultado);
+}
+```
+
+### AssertNull
+
+Testa se um valor de um objeto está NULO.
+
+```java
+@Test
+public void calcular() {
+ double a = null, b = null;
+ final double resultado = operacoes.somar(a, b);
+ Assert.asserNotNull(resultado);
+}
+```
+
 Site JUnit:  http://junit.org/<br>
 Git:  https://github.com/junit-team/junit 
 
