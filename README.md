@@ -13,10 +13,12 @@
 ### @Test
 Para determinar se um método é de teste utilizamos logo acima da método de teste a anotação: <b>@Test</b>
 
-<pre><code>@Test
+```java
+@Test
 public void calcular() {
   operacoes.somar(a, b);
-}</pre></code>
+}
+```
 
 ### @Ignore
 Para ignorar um método de teste utilizamos a anotação: <b>@Ignore</b>
